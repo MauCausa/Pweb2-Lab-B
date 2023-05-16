@@ -32,5 +32,11 @@ public class Calculator {
      public int mul(int first,int second){
          return first*second;
      }
+     public String div(int first,int second){
+         if (second != 0)
+         return " " + first/second;
+         else 
+         return "no se puede dividir";
+     }
     }
 }
