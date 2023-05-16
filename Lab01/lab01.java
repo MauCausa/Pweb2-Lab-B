@@ -9,4 +9,7 @@ public class Calculator{
     suma=a+b;
     return suma;
   }
+  public int sub(int a, int b){
+    return a-b;
+  }
 }
