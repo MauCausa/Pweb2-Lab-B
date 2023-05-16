@@ -38,5 +38,11 @@ public class Calculator {
          else 
          return "no se puede dividir";
      }
+     public String mod(int first, int second){
+         if(second==0)
+         return "La operación no se puede realizar porque hay una división entre 0";
+         else
+         return first%second;
+     }
     }
 }
