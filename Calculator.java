@@ -23,7 +23,9 @@ public class Calculator {
         case 5: System.out.println(mod(first,second));
           break;                        
       }
-     
+     public int add(int first,int second){
+        return first+second;
+     }
       
     }
 }
