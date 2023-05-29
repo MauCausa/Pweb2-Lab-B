@@ -39,9 +39,10 @@
 </tr>
 <tr><td colspan="6">INTEGRANTES:
     <ul>
-        <li>Integrante A</li>
-        <li>Integrante B</li>        
-        <li>Integrante C</li>
+        <li>ALFONSO HUACASI ALEJANDRO SEBASTIAN</li>
+        <li>CHANCUAÑA ALVIS KLISMANN</li>        
+        <li>CONGONA MANRIQUE MAURICIO ELIAS</li>
+        <li>FOROCCA MAMANI MAXS SEBASTIAN JOAQUIN</li>
     </ul>
 </td>
 </<tr>
