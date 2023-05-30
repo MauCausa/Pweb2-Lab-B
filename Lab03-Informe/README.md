@@ -73,17 +73,18 @@
 
 ## CUESTIONARIO
 - En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."?
-    -
+    - El Content-type es la propiedad que se especifica en el header y sirve para indicar que tipo de datos que se enviaran entre el cliente y el servidor. El Content-type en el lado del servidor indica el tipo de dato que le enviara al cliente, en este caso aplication/json o datos en formato JSON. Y en el lado del cliente, el tipo de dato que desea recibir (JSON).
 - En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?
--   -
+    - El archivo poema.txt deberia ubicarse en el directorio 'priv'.
 - ¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?
-    -
+    - S
 - Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?
-    -
+    - S
 
 #
 
 ## REFERENCIAS
-- links
+    - https://developer.mozilla.org/es/docs/Web/HTTP/Headers/Content-Type
+    - https://es.stackoverflow.com/questions/520507/como-especificar-content-type-en-fetch
 
 #
