@@ -68,7 +68,7 @@
 - En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
 -![paginaIndex](paginaIndex.png)
     - Listas los archivos Markdown disponibles
-    -![listarArchivos](listarArchivos.jpg)
+    -![listarArchivos](listarArchivos.png)
     - Ver el contenido de un archivo Markdown traducido a HTML
     - Crear nuevos archivos MarkDown y almacenarlos en el servidor
 - La comunicación entre el cliente y el servidor tiene que ser usando JSON sólamente. El cliente debe usar AJAX para sus peticiones El servidor debe usar NodeJS Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más.
