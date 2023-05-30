@@ -60,6 +60,11 @@
 
 
 ## EJERCICIOS PROPUESTOS
+- Repositorios personales, para probar los ejercicios resueltos en el laboratorio.
+    - Repositorio de Alejandro Alfonso: 
+    - Repositorio de Klismann Chancuaña: 
+    - Repositorio de Mauricio Congona: 
+    - Repositorio de Maxs Forocca: https://github.com/MaxsForocca/LAB-PWEB2-Ind.git
 - En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
     - Listas los archivos Markdown disponibles
     -![nombre de imagen](imagen.jpg)
@@ -75,16 +80,18 @@
 - En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."?
     - El Content-type es la propiedad que se especifica en el header y sirve para indicar que tipo de datos que se enviaran entre el cliente y el servidor. El Content-type en el lado del servidor indica el tipo de dato que le enviara al cliente, en este caso aplication/json o datos en formato JSON. Y en el lado del cliente, el tipo de dato que desea recibir (JSON).
 - En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?
-    - El archivo poema.txt deberia ubicarse en el directorio 'priv'.
+    - El archivo poema.txt deberia ubicarse en el directorio privado 'priv'.
 - ¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?
-    - S
+    - Si, el metodo replace en el ejercicio del poema (text : data.replace(/\n/g, '<br>');) buscara todas las coincidencias (/g) en las que aparezcan los saltos de linea (\n) y los reemplazara por saltos de linea HTML (<br>), esto es util para reemplazar la secuencia de caracteres que se repitan varias veces, por otro. En el ejemplo sirvio para visualizar el poema en un formato HTML.
 - Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?
-    - S
+    - El formato JSON se puede visualizar accediendo a la URL que proporcione el JSON, deacuerdo al navegador los datos JSON se visualizaran de diferente forma.
 
 #
 
 ## REFERENCIAS
-    - https://developer.mozilla.org/es/docs/Web/HTTP/Headers/Content-Type
-    - https://es.stackoverflow.com/questions/520507/como-especificar-content-type-en-fetch
+    -https://developer.mozilla.org/es/docs/Web/HTTP/Headers/Content-Type
+    -https://es.stackoverflow.com/questions/520507/como-especificar-content-type-en-fetch
+    -https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions
+    -https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer
 
 #
