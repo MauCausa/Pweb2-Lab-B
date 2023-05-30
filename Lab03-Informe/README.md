@@ -63,7 +63,7 @@
 - Repositorios personales, para probar los ejercicios resueltos en el laboratorio.
     - Repositorio de Alejandro Alfonso: 
     - Repositorio de Klismann Chancuaña: https://github.com/klismannSis/Proyecto_NodeJS.git
-    - Repositorio de Mauricio Congona: 
+    - Repositorio de Mauricio Congona: https://github.com/MauCausa/Pweb2.git
     - Repositorio de Maxs Forocca: https://github.com/MaxsForocca/LAB-PWEB2-Ind.git
 - En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
 -![paginaIndex](paginaIndex.png)
