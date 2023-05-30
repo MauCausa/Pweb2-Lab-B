@@ -70,7 +70,14 @@
     - Listas los archivos Markdown disponibles
     -![listarArchivos](listarArchivos.png)
     - Ver el contenido de un archivo Markdown traducido a HTML
-    - Crear nuevos archivos MarkDown y almacenarlos en el servidor
+    - Crear nuevos archivos MarkDown y almacenarlos en el servidor <br>
+    Demostración de la creación de nuevos archivos: <br>
+    Creamos el archivo "Steve" con un contenido y se guarda con el botón "Agregar archivo"<br>
+    -![](Creacion Steve.jpg) <br>
+    Vemos que se guardó en el listado de archivos del index.html <br>
+    - ![](Steve en listado index.jpg) <br>
+    Y también se guardó en el listado de archivos <br>
+    - ![](Steve en listado archivos.jpg) <br>
 - La comunicación entre el cliente y el servidor tiene que ser usando JSON sólamente. El cliente debe usar AJAX para sus peticiones El servidor debe usar NodeJS Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más.
 
 - Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta.
