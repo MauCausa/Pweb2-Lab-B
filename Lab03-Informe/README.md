@@ -56,7 +56,6 @@
 </table>
 
 
-#
 
 
 ## EJERCICIOS PROPUESTOS
@@ -67,32 +66,31 @@
     - Repositorio de Maxs Forocca: https://github.com/MaxsForocca/LAB-PWEB2-Ind.git
 - En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
 -![paginaIndex](paginaIndex.png)
-    - Listas los archivos Markdown disponibles
+    - Listas de los archivos Markdown disponibles:
     -![listarArchivos](listarArchivos.png)
-    - Ver el contenido de un archivo Markdown traducido a HTML
-    - Crear nuevos archivos MarkDown y almacenarlos en el servidor <br>
-    Demostración de la creación de nuevos archivos: <br>
+    - Ver el contenido de un archivo Markdown traducido a HTML:
+    - Crear nuevos archivos MarkDown y almacenarlos en el servidor: <br>
     Creamos el archivo "Steve" con un contenido y se guarda con el botón "Agregar archivo"<br>
-    -![](Creacion Steve.jpg) <br>
+    ![](CreacionSteve.jpg) <br>
     Vemos que se guardó en el listado de archivos del index.html <br>
-    - ![](Steve en listado index.jpg) <br>
+    ![](SteveIndex.jpg) <br>
     Y también se guardó en el listado de archivos <br>
-    - ![](Steve en listado archivos.jpg) <br>
+    ![](SteveArchivos.jpg) <br>
+    
 - La comunicación entre el cliente y el servidor tiene que ser usando JSON sólamente. El cliente debe usar AJAX para sus peticiones El servidor debe usar NodeJS Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más.
-
 - Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta.
 
 #
 
 ## CUESTIONARIO
 - En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."?
-    - El Content-type es la propiedad que se especifica en el header y sirve para indicar que tipo de datos que se enviaran entre el cliente y el servidor. El Content-type en el lado del servidor indica el tipo de dato que le enviara al cliente, en este caso aplication/json o datos en formato JSON. Y en el lado del cliente, el tipo de dato que desea recibir (JSON).
+    - El "Content-type" es la propiedad que se especifica en el header y sirve para indicar qué tipos de datos que se enviarán entre el cliente y el servidor. El "Content-type" en el lado del servidor indica el tipo de dato que le enviará al cliente, en este caso aplication/json o datos en formato JSON. Y en el lado del cliente, el tipo de dato que desea recibir (JSON).
 - En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?
-    - El archivo poema.txt deberia ubicarse en el directorio privado 'priv'.
+    - El archivo poema.txt debería ubicarse en el directorio privado 'priv'.
 - ¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?
-    - Si, el metodo replace en el ejercicio del poema (text : data.replace(/\n/g, 'br');) buscara todas las coincidencias (/g) en las que aparezcan los saltos de linea (\n) y los reemplazara por saltos de linea HTML (br), esto es util para reemplazar la secuencia de caracteres que se repitan varias veces, por otro. En el ejemplo sirvio para visualizar el poema en un formato HTML.
+    - Si, el método "replace" en el ejercicio del poema (text : data.replace(/\n/g, 'br');) buscará todas las coincidencias (/g) en las que aparezcan los saltos de línea (\n) y los reemplazará por saltos de línea HTML (br). Esto es útil para reemplazar la secuencia de caracteres que se repitan varias veces por otro. En el ejemplo sirvió para visualizar el poema en un formato HTML.
 - Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?
-    - El formato JSON se puede visualizar accediendo a la URL que proporcione el JSON, deacuerdo al navegador los datos JSON se visualizaran de diferente forma.
+    - El formato JSON se puede visualizar accediendo a la URL que proporcione el JSON, de acuerdo al navegador los datos JSON se visualizarán de diferente forma.
 
 #
 
