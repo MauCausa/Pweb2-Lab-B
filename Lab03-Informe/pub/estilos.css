@@ -1,0 +1,12 @@
+body{
+    background-color: #9ccbefda;
+}
+h1, h2, h3, h4, h5, h6, label, li{
+    color: rgb(40, 30, 30);
+}
+#lista{
+    background-color: orange;
+}
+#crear-archivos{
+    background-color: aqua;
+}
