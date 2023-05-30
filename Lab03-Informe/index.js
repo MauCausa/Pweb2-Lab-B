@@ -24,7 +24,7 @@ app.get('/archivos', (request, response) => {
 });
 
 /*
-// Crear un archivo
+// Crear un Archivo
 app.post('/archivos', (request ,response) => {
     const nombre = request.body.nombre;
     const contenido = request.body.contenido;
@@ -47,7 +47,7 @@ app.post('/archivos', (request ,response) => {
     })
 });
 */
-/* // para convertir de markdown a html?
+/* // Para convertir de markdown a html?
 const fs = require('fs')
 const path = require('path')
 const express = require('express')
