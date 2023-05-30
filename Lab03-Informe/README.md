@@ -30,12 +30,12 @@
 </theader>
 <tbody>
 <tr><td>ASIGNATURA:</td><td colspan="5">Programación Web 2</td></tr>
-<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Vim - Git - GitHub</td></tr>
+<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Ayax y NodeJS</td></tr>
 <tr>
-<td>NÚMERO DE PRÁCTICA:</td><td>01</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
+<td>NÚMERO DE PRÁCTICA:</td><td>03</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
-<td>FECHA INICIO::</td><td>25-Abr-2022</td><td>FECHA FIN:</td><td>29-Abr-2022</td><td>DURACIÓN:</td><td>04 horas</td>
+<td>FECHA INICIO::</td><td>23-May-2023</td><td>FECHA FIN:</td><td>29-May-2023</td><td>DURACIÓN:</td><td>04 horas</td>
 </tr>
 <tr><td colspan="6">INTEGRANTES:
     <ul>
@@ -48,7 +48,7 @@
 </<tr>
 <tr><td colspan="6">DOCENTE:
 <ul>
-<li>Nombre del docente</li>
+<li>Anibal Sardon</li>
 </ul>
 </td>
 </<tr>
@@ -60,17 +60,26 @@
 
 
 ## EJERCICIOS PROPUESTOS
-- Ejercicio propuestos 
-    - SubEjercicios
+- En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
+    - Listas los archivos Markdown disponibles
+    -![nombre de imagen](imagen.jpg)
+    - Ver el contenido de un archivo Markdown traducido a HTML
+    - Crear nuevos archivos MarkDown y almacenarlos en el servidor
+- La comunicación entre el cliente y el servidor tiene que ser usando JSON sólamente. El cliente debe usar AJAX para sus peticiones El servidor debe usar NodeJS Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más.
+
+- Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta.
 
 #
 
 ## CUESTIONARIO
-- Preguntas del cuestionario
-
-  Respuesta
-  
-  -![nombre de imagen](imagen.jpg)
+- En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."?
+    -
+- En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?
+-   -
+- ¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?
+    -
+- Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?
+    -
 
 #
 
