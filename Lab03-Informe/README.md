@@ -66,6 +66,7 @@
     - Repositorio de Mauricio Congona: 
     - Repositorio de Maxs Forocca: https://github.com/MaxsForocca/LAB-PWEB2-Ind.git
 - En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
+-![paginaIndex](paginaIndex.png)
     - Listas los archivos Markdown disponibles
     ![nombre de imagen](imagen.jpg)
     - Ver el contenido de un archivo Markdown traducido a HTML
