@@ -60,7 +60,7 @@
 
 ## EJERCICIOS PROPUESTOS
 - Repositorios personales, para probar los ejercicios resueltos en el laboratorio.
-    - Repositorio de Alejandro Alfonso: 
+    - Repositorio de Alejandro Alfonso: https://github.com/Sebastianzzzin/proyecto.git
     - Repositorio de Klismann Chancuaña: https://github.com/klismannSis/Proyecto_NodeJS.git
     - Repositorio de Mauricio Congona: https://github.com/MauCausa/Pweb2.git
     - Repositorio de Maxs Forocca: https://github.com/MaxsForocca/LAB-PWEB2-Ind.git
