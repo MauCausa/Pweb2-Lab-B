@@ -60,7 +60,8 @@
 
 ## EJERCICIOS PROPUESTOS
 - 1. Deberán replicar la actividad del video donde se obtiene una plantilla de una aplicación de Destinos turísticos y adecuarla a un proyecto en blanco Django.
-
+    - Se utilizo la plantilla de 'Travello', que muestra el video del aula virtual. Y se adecuo para una aplicacion de Destinos Turisticos en el puerto predestinado al correr el servidor.
+    ![1-plantilla_LugaresTuristicos.png](imagenes/1-plantilla_LugaresTuristicos.png)
 - 2. Luego trabajar con un modelo de tabla DestinosTuristicos donde se guarden nombreCiudad, descripcionCiudad, imagenCiudad, precioTour, ofertaTour (booleano). Estos destinos turísticos deberán ser agregados en una vista dinámica utilizando tags for e if.
 
 - 3. Para ello crear una carpeta dentro del proyecto github colaborativo con el docente, e informar el link donde se encuentra.
