@@ -1,6 +1,13 @@
 from django.db import models
 
 # Create your models here.
+
+class DestinosTuristicos():
+    nombreCiudad : str
+    descripcionCiudad : str
+    imagenCiudad : str
+    precioTour : int
+    ofertaTour : bool
 """
 class DestinosTuristicos(models.Model):
     nombreCuidad = models.CharField(max_length=150, blank=True)
