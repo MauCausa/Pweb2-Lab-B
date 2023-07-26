@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Usuario
-
+from .models import Bodega
 
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
@@ -11,3 +11,9 @@ class UsuarioSerializer(serializers.ModelSerializer):
         user = Usuario(**validated_data)
         user.save()
         return user
+        
+class BodegaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Bodega
+        #fields = ('fullname', 'nickname')
+        fields = '__all__'
