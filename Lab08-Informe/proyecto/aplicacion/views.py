@@ -3,6 +3,8 @@ from rest_framework.response import Response
 from django.shortcuts import render, redirect
 from .serializers import UsuarioSerializer
 from .models import Usuario
+from .serializer import BodegaSerializer
+from .models import Bodega
 
 
 class UsuarioViewSet(viewsets.ModelViewSet):
@@ -44,3 +46,7 @@ def home(request):
     username = request.session.get('username')
     print("redirigiendo a home")
     return render(request, 'home.html', {'username':username})
+    
+class BodegaViewSet(viewsets.ModelViewSet):
+    queryset = Bodega.objects.all()
+    serializer_class = BodegaSerializer
