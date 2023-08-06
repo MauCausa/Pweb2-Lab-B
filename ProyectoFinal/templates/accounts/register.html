@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            background-image: url("/static/img/two.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            
+            
+        }
+
+        form {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: rgba(300, 300, 300, 0.30); /* Color de fondo transparente */
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            color: #fff;
+
+        }
+
+        input {
+            display: block;
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: rgba(500, 500, 500, 0.10); /* Color de fondo transparente */
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            color: white;
+            transition: box-shadow 0.10s;
+
+        }
+
+        input[type="submit"] {
+            background-color: #008080;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input:hover{
+            box-shadow: 0 0 20px #4CAF50;
+        }
+
+        div {
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: #4CAF50;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="register" method="POST"> {% csrf_token %}
+        <input type="text" name="first_name" placeholder="First Name"><br>
+        <input type="text" name="last_name" placeholder="Last Name"><br>
+        <input type="text" name="username" placeholder="Username"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="password" name="password1" placeholder="Password"><br>
+        <input type="password" name="password2" placeholder="Confirm Password"><br>
+        <input type="Submit">
+    </form>
+
+    <div>
+        {% for message in messages %}
+            <h3>{{ message }}</h3>
+        {% endfor %}
+    </div>
+</body>
+</html>

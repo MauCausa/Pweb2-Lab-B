@@ -1,0 +1,276 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <title>{% block title %}UrbanThreads{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+        <link rel="stylesheet" href="{% static 'css/templatemo-hexashop.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+    </head>
+    
+    <body>
+        <div id="preloader">
+            <div class="jumper">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>  
+        <header class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <a href="{% url 'home' %}" class="logo">
+                                <img src="{% static 'images/logo.jpg' %}">
+                            </a>
+    
+                            <ul class="nav">
+                                <li class="scroll-to-section"><a href="{% url 'home' %}">Home</a></li>
+                                <li class="scroll-to-section"><a href="{% url 'store' %}">Technology</a></li>
+                                <li class="submenu">
+                                    <a href="javascript:;">Pages</a>
+                                    <ul>
+                                        <li><a href="{% url 'service' %}">Services</a></li>
+                                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                    </ul>
+                                </li>
+                                
+                                {% if user.is_authenticated %}
+                                    <li class="scroll-to-section"><a>Hello! {{ user.username }}</a></li>
+                                    <li class="scroll-to-section"><a href="{% url 'logout' %}">Logout</a></li>
+                                {% else %}
+                                    <li class="scroll-to-section"><a href="{% url 'register' %}">Register</a></li>
+                                    <li class="scroll-to-section"><a href="{% url 'login' %}">Login</a></li>
+                                {% endif %}
+                            </ul>        
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        {% block main %}
+            <div class="main-banner" id="top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="left-content">
+                                <div class="thumb">
+                                    <div class="inner-content">
+                                        <h4>technology-future</h4>
+                                        <span>Unforgetable experience &amp; creative</span>
+                                        <div class="main-border-button">
+                                            <a href="#">Purchase Now!</a>
+                                        </div>
+                                    </div>
+                                    <img src="{% static 'images/two.jpg' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-content">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="right-first-image">
+                                            <div class="thumb">
+                                                <div class="inner-content">
+                                                    <h4>Phones</h4>
+                                                    <span>The technology you expected</span>
+                                                </div>
+                                                <div class="hover-content">
+                                                    <div class="inner">
+                                                        <h4>Iphone</h4>
+                                                        <p></p>
+                                                        <div class="main-border-button">
+                                                            <a href="#women">Discover More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="{% static 'images/telefono.jpg' %}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="right-first-image">
+                                            <div class="thumb">
+                                                <div class="inner-content">
+                                                    <h4>Laptops</h4>
+                                                    <span>The best option for you</span>
+                                                </div>
+                                                <div class="hover-content">
+                                                    <div class="inner">
+                                                        <h4>Laptops</h4>
+                                                        <p></p>
+                                                        <div class="main-border-button">
+                                                            <a href="#men">Discover More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="{% static 'images/laptop.jpg' %}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="right-first-image">
+                                            <div class="thumb">
+                                                <div class="inner-content">
+                                                    <h4>Gaming chair</h4>
+                                                    <span>Comfortable chairs</span>
+                                                </div>
+                                                <div class="hover-content">
+                                                    <div class="inner">
+                                                        <h4>Gaming chair</h4>
+                                                        <span>World of sound</span>
+                                                        <p></p>
+                                                        <div class="main-border-button">
+                                                            <a href="#kids">Discover More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="{% static 'images/silla.jpg' %}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="right-first-image">
+                                            <div class="thumb">
+                                                <div class="inner-content">
+                                                    <h4>Earphones</h4>
+                                                    <span>Your world of sounds</span>
+                                                </div>
+                                                <div class="hover-content">
+                                                    <div class="inner">
+                                                        <h4>Earphones</h4>
+                                                        <p></p>
+                                                        <div class="main-border-button">
+                                                            <a href="#">Discover More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="{% static 'images/audi.jpg' %}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+        
+        <div id="content">
+            {% block content %}
+            
+            {% endblock %}
+        </div>
+        
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="first-item">
+
+                            <style>
+                                .logo img {
+                                    width: 107px;
+                                    height: 80px;
+                                }
+                            </style>
+
+                            <div class="logo">
+                                <img src="{% static 'images/logo.jpg' %}" alt="hexashop ecommerce templatemo">
+                            </div>
+                            <ul>
+                                <li><a href="#">Technology becomes magic when intertwined with human creativity.</a></li>
+                                <li><a href="#">projectpweb2.2023a@gmail.com</a></li>
+                                <li><a href="#">006-020-0340</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Shopping &amp; Categories</h4>
+                        <ul>
+                            <li><a href="#">Telefones Shopping</a></li>
+                            <li><a href="#">Laptops Shopping</a></li>
+                            <li><a href="#">Earphones Shopping</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Homepage</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Help &amp; Information</h4>
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Tracking ID</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="under-footer">
+                            <p>Copyright © 2022 UrbanThreads Co., Ltd. All Rights Reserved. 
+                            
+                            <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="{% static 'js/jquery-2.1.0.min.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/owl-carousel.j' %}s"></script>
+        <script src="{% static 'js/accordions.j' %}s"></script>
+        <script src="{% static 'js/datepicker.j' %}s"></script>
+        <script src="{% static 'js/scrollreveal.min.j' %}s"></script>
+        <script src="{% static 'js/waypoints.min.j' %}s"></script>
+        <script src="{% static 'js/jquery.counterup.min.j' %}s"></script>
+        <script src="{% static 'js/imgfix.min.js' %}"></script> 
+        <script src="{% static 'js/slick.js' %}"></script> 
+        <script src="{% static 'js/lightbox.js' %}"></script> 
+        <script src="{% static 'js/isotope.js' %}"></script> 
+        <script src="{% static 'js/custom.js' %}"></script>
+        <script>
+            $(function() {
+                var selectedClass = "";
+                $("p").click(function(){
+                    selectedClass = $(this).attr("data-rel");
+                    $("#portfolio").fadeTo(50, 0.1);
+                        $("#portfolio div").not("."+selectedClass).fadeOut();
+                    setTimeout(function() {
+                        $("."+selectedClass).fadeIn();
+                        $("#portfolio").fadeTo(50, 1);
+                    }, 500);
+                });
+            });
+        </script>
+    </body>
+</html>
