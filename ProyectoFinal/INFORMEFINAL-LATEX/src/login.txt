@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            background-image: url("/static/img/four.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: rgba(300, 300, 300, 0.20); /* Color de fondo transparente */
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+
+        input {
+            display: block;
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: rgba(500, 500, 500, 0.10); /* Color de fondo transparente */
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            color: white;
+            transition: box-shadow 0.10s;
+        }
+
+        input[type="submit"] {
+            background-color: #008080;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input:hover {
+            box-shadow: 0 0 20px #4CAF50;
+        }
+
+        div {
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: #4CAF50;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="login" method="POST">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <input type="Submit">
+    </form>
+
+    <div>
+        {% for message in messages %}
+            <h3>{{ message }}</h3>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
